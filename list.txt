@@ -18,7 +18,7 @@ res = c+b+a
 #2 method : (in built swap method)
 l[0],l[-1]=l[-1],l[0]
 l
-
+===================================================
 ## 2. swap two element in a list
 
 l
@@ -39,14 +39,14 @@ for i in  l:
         b.append(i)
 l[p1-1] = b[0]
 l[p2-1] = a[0]
-
+=========================================================================
 ## 3. swap elements in string list
 
 t = ['gfg','is','best','for','geek']
 
 #1 method: list comprehension + replace()
 [i.replace('g','h').replace('e','g').replace('h','e') for i in t]
-
+==============================================================================
 ## 4. ways to find len of list
 
 l
@@ -71,7 +71,7 @@ c
 
 #6 
 list(range(len(l)+1))[-1]
-
+=======================================================
 ## 5. maximum of two numbers in python
 
 l
@@ -84,7 +84,7 @@ max(a,b)
 
 #2 method:
 sorted([a,b])[-1]
-
+=============================================================
 ## 6. ways to check element is present in the list
 
 l
@@ -118,7 +118,7 @@ if len(l1)>=1:
     print('present')
 else:
     print('not present')
-
+=======================================================
 ## 6.5 revese the list:
 
 #1 using pop and range index
@@ -126,7 +126,7 @@ res = [l.pop() for i in range(len(l))]
 
 
 res
-
+========================================================
 ## 7. different way to clear a list 
 
 l= [1,2,3,4,5,6,6]
@@ -153,7 +153,7 @@ l
 
 #5 method: del it deletes object also
 del(l)
-
+==================================================
 ## 8. count occurance of an element
 
 from collections import Counter
@@ -178,7 +178,7 @@ for i in l:
     if i == 6:
         c+=1
 print(c)
-
+==============================================================
 ## 9. find sum and avg:
 
 l
@@ -211,7 +211,7 @@ import math
 math.fsum(l)
 
 math.fsum(l)/len(l)
-
+======================================================
 ## 10. sum of number digit in list:
 
 x = [11,22,33,44,55,66]
@@ -224,7 +224,7 @@ l1
 
 #2 metho: nested list comprehension:
 [sum([int(j) for j in str(i)]) for i in x]
-
+==========================================================
 ## 11. multiply all numbers in a list
 
 #1 method:
@@ -247,7 +247,7 @@ np.cumproduct(l)[-1]
 from functools import reduce
 
 reduce((lambda x,y:x*y ),l)
-
+=================================================================
 ## 12. find smallest number in a list
 
 l
@@ -264,7 +264,7 @@ l[0]
 
 #4 method
 [i for i in l if i==min(l)][0]
-
+==================================================================
 ## 13. largest number in list
 
 #1 method:
@@ -279,7 +279,7 @@ l[0]
 
 #4 method:
 [i for i in l if i==max(l)][0]
-
+====================================================================
 ## 14. second largest number in a list
 
 l
@@ -295,7 +295,7 @@ for i in l:
         l1.append(i)
 l1.sort()
 l1[-2]
-
+=======================================================================
 ## 15. print even number in a list
 
 l
@@ -324,7 +324,7 @@ e.dropna(inplace = True)
 
 #4 method:
 list(filter(lambda x: x%2==1,l))
-
+=========================================================================
 ## 16. print odd number in python
 
 l
@@ -349,7 +349,7 @@ res
 
 #4 method:
 list(filter(lambda x: x%2==1,l))
-
+=========================================================================
 ## 17. to print all even number in range:
 
 s = 10
@@ -372,7 +372,7 @@ list(filter(lambda x: x%2==0 , range(s,e)))
 e1=list(map(lambda x: x if x%2==1 else 'n',range(s,e)))
 
 [i for i in e1 if type(i)==int]
-
+==========================================================================
 ## 18. python programe to find even and odd in a list:
 
 #1 method:
@@ -397,7 +397,7 @@ print('odd is:',len(list(filter(lambda x: x%2==1,l))))
 print('even is:',len([i for i in list(map(lambda x: x if x%2==0 else 'n',l)) if type(i)==int]))
 
 print('odd is:',len([i for i in list(map(lambda x: x if x%2==1 else 'n',l)) if type(i)==int]))
-
+======================================================================================================
 ## 19. print positive number in list:
 
 li = [-1,-2,-3,-4,-5,1,2,3,4,5]
@@ -417,7 +417,7 @@ list(filter(lambda x:x>0,li))
 
 #4 method:
 [i for i in list(map(lambda x: x if x>0 else 'n',li)) if type(i)==int]
-
+======================================================================================================
 ## 20. print negative number in a list:
 
 li
@@ -437,7 +437,7 @@ list(filter(lambda x:x<0,li))
 
 #4 method:
 [i for i in list(map(lambda x: x if x<0 else 'n',li)) if type(i)==int]
-
+==============================================================================================
 ## 21. print all positive number in a range:
 
 s = -10
@@ -458,7 +458,7 @@ list(filter(lambda x: x>0, range(s,e)))
 
 #4 method:
 [i for i in list(map(lambda x: x if x>0 else 'n',range(s,e))) if type(i)==int]
-
+====================================================================================
 ## 22. to count positive and negative element in a list
 
 #1 method:
@@ -483,7 +483,7 @@ print('negative:',len(list(filter(lambda x: x<0,range(s,e)))))
 #4 method:
 print('positive:',len([i for i in list(map(lambda x:x if x>=0 else 'n',range(s,e))) if type(i)==int]))
 print('negative:',len([i for i in list(map(lambda x:x if x<0 else 'n',range(s,e))) if type(i)==int]))
-
+=============================================================================================================
 ## 23. remove multiple element from list:
 
 l = [1,2,3,4,5,6,6]
@@ -507,7 +507,7 @@ l
 #4 method:
 list(filter(lambda x: l.remove(x),re))
 l
-
+========================================================================================================
 ## 24. program to remove empty tuple from a list:
 
 t = [(),('pratik','p'),(),('santosh','s'),(),('salaskar','s'),(",")]
@@ -527,7 +527,7 @@ list(filter(None,t))
 
 #4 method:
 [i for i in t if i != ()]
-
+=======================================================================================
 ## 25. to print duplicates in a list:
     
 
@@ -550,7 +550,7 @@ from collections import Counter
 res = Counter(l)
 
 [i[0] for i in list(res.items()) if i[1]>1]
-
+=======================================================================================
 ## 26. remove empty list from list of list:
 
 x = [[1],[2],[3],[4],[],[]]
@@ -570,14 +570,14 @@ list(filter(lambda x : x!=[],x))
 
 #4 method:
 [i for i in list(map(lambda x:x if x != [] else 'n',x)) if type(i)==list or type(i)==int]
-
+=======================================================================================
 ## 27. convert list to list of dictionary:
 
 l1 = ['gfg',3,'is',8]
 l2 = ['name','id']
 
 
-
+=======================================================================================
 ## 28. uncommon element in list of list:
 
 l1 = [[1,2],[3,4],[5,6]]
@@ -601,7 +601,7 @@ l3
 list(filter(lambda x: x not in l2,l1))+list(filter(lambda y: y not in l1,l2))
 
  
-
+=======================================================================================
 ## 29. select random value from list of list
 
 l1
@@ -626,7 +626,7 @@ random.choice(res)
 import numpy as np
 
 np.random.randint(res[0],res[-1],size=(1,1))[0][0]
-
+=======================================================================================
 ## 30. reverse row sort in list of list
 
 l1
